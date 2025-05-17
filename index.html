@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHA5E</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Intro Animation Overlay -->
+    <div id="intro">
+        <svg id="logo-svg" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+            <mask id="fill-mask" maskUnits="userSpaceOnUse">
+                <rect id="mask-rect" x="0" y="200" width="800" height="200" fill="white" />
+            </mask>
+
+            <text id="outline-text" x="400" y="100" text-anchor="middle" dominant-baseline="middle" font-size="140"
+                stroke="white" stroke-width="2" fill="transparent">
+                PHA5E
+            </text>
+
+            <text id="filler-text" x="400" y="100" text-anchor="middle" dominant-baseline="middle" font-size="140"
+                fill="white" mask="url(#fill-mask)">
+                PHA5E
+            </text>
+        </svg>
+    </div>
+
+
+    <!-- Main Content -->
+    <div id="main-content" style="display: none;">
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar px-4">
+            <a class="navbar-brand" href="#">
+                <h2 id="tp">PHA5E</h2>
+            </a>
+
+            <!-- Mobile toggle only on small screens -->
+            <button class="navbar-toggler d-lg-none" type="button" id="menu-toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Desktop navbar links (hidden on small screens) -->
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link me-3" href="#">Our vision</a></li>
+                    <li class="nav-item"><a class="nav-link me-3" href="#">Our team</a></li>
+                    <li class="nav-item"><a class="nav-link me-3" href="#">Our projects</a></li>
+                    <li class="nav-item"><a class="nav-link me-3" href="#">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link lang" href="#">FR/EN</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile fullscreen menu overlay -->
+            <div class="mobile-menu d-lg-none">
+                <button class="close-btn text-white">&times;</button>
+                <ul class="navbar-nav flex-column text-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Our vision</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Our team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Our projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link lang" href="#">FR/EN</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <!-- Hero Section -->
+        <section class="hero position-relative text-white text-center p-5">
+            <div class="floating-thumbnails">
+                <div class="hover-zone">
+                    <div class="thumbnail" style="left: 10vw; top: 170px;">
+                        <img src="assets/p-1.avif" alt="Project 1">
+                        <div class="thumb-text">
+                            <h2>Project One</h2>
+                            <span>Tagline or Description</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover-zone">
+                    <div class="thumbnail" style="left: 55vw; top: 110px;">
+                        <img src="assets/p-2.avif" alt="Project 2">
+                        <div class="thumb-text">
+                            <h2>Project Two</h2>
+                            <span>Tagline or Description</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover-zone">
+                    <div class="thumbnail" style="left: 12vw; top: 470px;">
+                        <img src="assets/p-3.avif" alt="Project 3">
+                        <div class="thumb-text">
+                            <h2>Project Three</h2>
+                            <span>Tagline or Description</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover-zone">
+                    <div class="thumbnail" style="left: 57vw; top: 410px;">
+                        <img src="assets/p-4.avif" alt="Project 4">
+                        <div class="thumb-text">
+                            <h2>Project Four</h2>
+                            <span>Tagline or Description</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="hero-text">
+                <span class="word word-1">IMAGINING</span><br>
+                <span class="word word-2">UNIQUE</span><br>
+                <span class="word word-3">CONCEPTS</span><br>
+                <span class="word word-4">AND DIGITAL</span><br>
+                <span class="word word-5">EXPERIENCES</span>
+            </h1>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS and GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
